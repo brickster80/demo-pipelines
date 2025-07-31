@@ -1,0 +1,16 @@
+            - name: Databricks Asset Bundles Deploy
+  # You may pin to the exact commit or the version.
+  # uses: LumiaStudios/Databricks-Asset-Bundles-Deploy@258bf6125568a7dbd97bb9a7257f0927e0db0db5
+  uses: LumiaStudios/Databricks-Asset-Bundles-Deploy@v1.0.0
+  with:
+    # The directory containing the Databricks asset bundle configuration
+    working-directory: arescicd
+    # The Databricks workspace host URL
+    databricks-host: https://e2-demo-field-eng.cloud.databricks.com/
+    # The target environment for the Databricks asset bundle deployment
+    databricks-bundle-env: dev
+    # # The type of authentication to use (token or oauth)
+    # authentication-type: # default is token
+    # # Databricks personal access token for authentication
+    # databricks-token: # optional
+          
