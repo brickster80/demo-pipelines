@@ -1,0 +1,14 @@
+# The main pipeline for arescicd
+resources:
+  pipelines:
+    arescicd_pipeline:
+      name: arescicd_pipeline
+      catalog: main
+      schema: arescicd_${bundle.target}
+      serverless: true
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
